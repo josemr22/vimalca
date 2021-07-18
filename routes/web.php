@@ -7,7 +7,7 @@ use App\Http\Livewire\{
     ShowEnterprise,
     ShowMessages,
 };
-use App\Http\controllers\{PageController};
+// use App\Http\controllers\{PageController};
 use Illuminate\Support\Facades\Route;
 use App\Models\Branch;
 
@@ -37,9 +37,9 @@ Route::middleware(['auth'])->group(function(){
     });
 });
 
-Route::get('/', [PageController::class, 'index'])->name('index');
-Route::get('/nosotros', [PageController::class, 'about'])->name('about');
-Route::get('/empresas/{branch}', [PageController::class, 'branch'])->name('branch');
+Route::get('/', [App\Http\controllers\PageController::class, 'index'])->name('index');
+Route::get('/nosotros', [App\Http\controllers\PageController::class, 'about'])->name('about');
+Route::get('/empresas/{branch}', [App\Http\controllers\PageController::class, 'branch'])->name('branch');
 Route::view('/contactanos', 'page.contact')->name('contact');
 
 require __DIR__.'/auth.php';

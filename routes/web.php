@@ -7,7 +7,7 @@ use App\Http\Livewire\{
     ShowEnterprise,
     ShowMessages,
 };
-use App\Http\controllers\PageController;
+use App\Http\controllers\{PageController};
 use Illuminate\Support\Facades\Route;
 use App\Models\Branch;
 

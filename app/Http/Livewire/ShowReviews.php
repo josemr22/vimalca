@@ -7,52 +7,53 @@ use Livewire\Component;
 
 class ShowReviews extends Component
 {
+    public $review;
     public $reviews;
-    public $toDelete =[];
+    public $action="store";
 
     protected $rules = [
-        'reviews.*.autor' => 'required|string',
-        'reviews.*.company' => 'nullable|string',
-        'reviews.*.body' => 'required|string|max:500',
+        'review.autor' => 'required|string',
+        'review.company' => 'nullable|string',
+        'review.body' => 'required|string|max:500',
     ];
 
     protected $messages = [
-        'reviews.*.autor.required' => 'Complete el campo',
-        'reviews.*.company.required' => 'Complete el campo',
-        'reviews.*.body.required' => 'Complete el campo',
-        'reviews.*.body.max' => 'Máximo 500 caracteres',
+        'review.autor.required' => 'Complete el campo',
+        'review.company.required' => 'Complete el campo',
+        'review.body.required' => 'Complete el campo',
+        'review.body.max' => 'Máximo 500 caracteres',
     ];
-
-    public function mount(){
-        $this->reviews = Review::orderByDesc('created_at')->get();
-    }
 
     public function render()
     {
+        $this->reviews=Review::orderBy('created_at')->get();
         return view('livewire.show-reviews');
+    }
+
+    public function edit(Review $review){
+        $this->review=$review;
+        $this->resetErrorBag();
+        $this->action='edit';
     }
 
     public function save(){
         $this->validate();
-        foreach(Review::get() as $review){
-            if (in_array($review->id, $this->toDelete)) {
-                $review->delete();
-            }
+        if($this->action == 'store'){
+            Review::create($this->validate()['review']);
+        }else{
+            $this->review->save();
         }
-        foreach ($this->reviews as $review) {
-            $review->save();
-        }
-        $this->toDelete=[];
+        $this->default();
         $this->emit('showToast', ['type' => 'success', 'message' => '🔥 Datos guardados correctamente']);
     }
 
-    public function removeReview($id){
-        $this->reviews = $this->reviews->filter(function ($review) use($id) {
-            if ($review->id != $id) {
-                return $review;
-            }else{
-                array_push($this->toDelete,$review->id);
-            }
-        });
+    public function remove($id){
+        Review::find($id)->delete();
+    }
+
+    public function default(){
+        $this->resetErrorBag();
+        $this->review=null;
+        $this->action='store';
     }
 }

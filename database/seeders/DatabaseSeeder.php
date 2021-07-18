@@ -22,6 +22,10 @@ class DatabaseSeeder extends Seeder
         ]);
         $this->call([
             ReviewSeeder::class,
+            BranchSeeder::class,
+            GallerySeeder::class,
+            EnterpriseSeeder::class,
+            MessageSeeder::class,
         ]);
     }
 }

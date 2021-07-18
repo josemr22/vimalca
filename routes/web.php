@@ -37,9 +37,9 @@ Route::middleware(['auth'])->group(function(){
     });
 });
 
-Route::get('/', [App\Http\controllers\PageController::class, 'index'])->name('index');
-Route::get('/nosotros', [App\Http\controllers\PageController::class, 'about'])->name('about');
-Route::get('/empresas/{branch}', [App\Http\controllers\PageController::class, 'branch'])->name('branch');
+Route::get('/', [App\Http\Controllers\PageController::class, 'index'])->name('index');
+Route::get('/nosotros', [App\Http\Controllers\PageController::class, 'about'])->name('about');
+Route::get('/empresas/{branch}', [App\Http\Controllers\PageController::class, 'branch'])->name('branch');
 Route::view('/contactanos', 'page.contact')->name('contact');
 
 require __DIR__.'/auth.php';

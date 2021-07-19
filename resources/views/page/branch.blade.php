@@ -78,6 +78,7 @@
                 </div>
             </div>
         </section>
+        <x-clients :clients="$clients" :style="'padding-top:0px'"/>
         <section class="projdtal" id="gallery">
             <div class="justified-gallery">
                 @foreach ($images as $item)

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Branch;
+use App\Models\Client;
 use App\Models\Review;
 use App\Models\Gallery;
 use App\Models\BranchType;
@@ -15,7 +16,7 @@ class PageController extends Controller
     public function index(){
         $gallery = Gallery::where('category','!=','client')->get();
         $reviews = Review::get();
-        $clients = Gallery::where('category','client')->get();
+        $clients = Client::where('branch','hielo')->get();
         $slides = Branch::get();
         return view('page.index',compact('clients','reviews','gallery','slides'));
     }
@@ -46,7 +47,8 @@ class PageController extends Controller
         }
         $name = BranchType::getList()[$type]['label'];
         $branch=Branch::where('name',$type)->first();
+        $clients=Client::where('branch',$type)->get();
         $images = Gallery::where('category',$type)->get();
-        return view('page.branch', compact('type','branch','name','images'));
+        return view('page.branch', compact('type','branch','name','images','clients'));
     }
 }

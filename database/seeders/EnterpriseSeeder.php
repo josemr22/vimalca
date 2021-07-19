@@ -16,24 +16,11 @@ class EnterpriseSeeder extends Seeder
     {
         //
         Enterprise::create([
-            'code'=>'quienes_somos',
-            'one'=>'ConsorcioVimalcatiene10añosdeexperienciainiciandopropiamenteconlapescasupresenciaenelmercadoinicioenelaño2011.Debidoalanecesidaddecomercializarrecursoshidrobiológicosseempezóaadquirirunidadesfrigoríficasparaeltransportededichosrecursos(bonito,jurelycaballa).Comopartedelprocesodelaconversióndelrecursohidrobiológicoesnecesarioadherirlehieloalpescadoextraído,surgiendolanecesidaddelacreacióndeunaFábricadehieloparaabasteceralosfrigoríficosdelconsorcioyasímismoabasteceraterceros.Debidoaquelasembarcacionesyfrigoríficosnecesitandecombustibleparapodersetrasladar,seoptóporconstruirunaestacióndeservicios:“Grifo&MinimarketVimalca”abanderadosporREPSOL.',
-            'two'=>'¿Quiénes Somos',
-        ]);
-        Enterprise::create([
-            'code'=>'sobre_nosotros',
-            'one'=>'ConsorcioVimalcatiene10añosdeexperienciainiciandopropiamenteconlapescasupresenciaenelmercadoinicioenelaño2011.',
-            'two'=>'Sobre Nosotros',
-        ]);
-        Enterprise::create([
-            'code'=>'mision',
-            'one'=>'luctus massa ipsum at tempus eleifend congue lectus bibendum at tempus eleifend congue lectus bibendum at tempus eleifend congue lectus bibendum',
-            'two'=>'Mision',
-        ]);
-        Enterprise::create([
-            'code'=>'vision',
-            'one'=>'luctus massa ipsum at tempus eleifend congue lectus bibendum at tempus eleifend congue lectus bibendum at tempus eleifend congue lectus bibendum',
-            'two'=>'Vision',
+            'who'=>'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis error aliquam maxime ipsa aut molestiae! Architecto placeat quisquam iste ipsum, doloribus impedit, alias ut soluta saepe eligendi, expedita magnam porro.',
+            'about'=>'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis error aliquam maxime ipsa aut molestiae! Architecto placeat quisquam iste ipsum, doloribus impedit, alias ut soluta saepe eligendi, expedita magnam porro.',
+            'mision'=>'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis error aliquam maxime ipsa aut molestiae! Architecto placeat quisquam iste ipsum, doloribus impedit, alias ut soluta saepe eligendi, expedita magnam porro.',
+            'vision'=>'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis error aliquam maxime ipsa aut molestiae! Architecto placeat quisquam iste ipsum, doloribus impedit, alias ut soluta saepe eligendi, expedita magnam porro.',
+            'image'=>'default.png',
         ]);
     }
 }

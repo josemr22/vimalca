@@ -20,7 +20,7 @@
                         </th>
                         <th class="p-2 border-r cursor-pointer text-sm font-thin text-gray-500">
                             <div class="flex items-center justify-center">
-                                Imagen
+                                Imagen (100 x 100)
                             </div>
                         </th>
                         <th class="p-2 border-r cursor-pointer text-sm font-thin text-gray-500">
@@ -49,10 +49,10 @@
                             </td>
                         </form>
                     </tr>
-                    @foreach ($galleries as $item)
+                    @foreach ($clients as $item)
                         <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
-                            <td class="p-2 border-r">{{$item->one ?? '---'}}</td>
-                            <td class="p-2 border-r" align="center"><img width="150px" src="{{$item->urlPath}}" alt="img"></td>
+                            <td class="p-2 border-r">{{$item->name}}</td>
+                            <td class="p-2 border-r" align="center"><img width="100px" src="{{$item->urlPath}}" alt="img"></td>
                             <td>
                                 <button wire:click="edit({{$item->id}})" class="bg-blue-500 p-2 text-white hover:shadow-lg text-xs font-thin">Editar</button>
                                 <button wire:click="remove({{$item->id}})" wire:loading.attr="disabled" wire:target="remove" class="bg-red-500 p-2 text-white hover:shadow-lg text-xs font-thin">Eliminar</button>

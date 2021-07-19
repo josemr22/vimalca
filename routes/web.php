@@ -6,6 +6,7 @@ use App\Http\Livewire\{
     ShowGallery,
     ShowEnterprise,
     ShowMessages,
+    ShowClients,
 };
 // use App\Http\controllers\{PageController};
 use Illuminate\Support\Facades\Route;
@@ -29,7 +30,7 @@ Route::middleware(['auth'])->group(function(){
         return view('branches',['branches' => Branch::get()]);
     })->name('branches');
     Route::view('/galerias', 'galleries')->name('galleries');
-    Route::view('/clientes', 'clients')->name('clients');
+    Route::get('/clientes', ShowClients::class)->name('clients');
     Route::get('/vimalca', ShowEnterprise::class)->name('vimalca');
     Route::get('/mensajes', ShowMessages::class)->name('messages');
     Route::get('dashboard',function(){

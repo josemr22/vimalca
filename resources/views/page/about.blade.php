@@ -6,7 +6,7 @@
                     <div class="cont text-center">
                         <h1>¿Quiénes Somos?</h1>
                         <div class="path">
-                            <a href="index.php">Inicio</a><span>/</span><a href="#" class="active">Nosotros</a>
+                            <a href="{{route('index')}}">Inicio</a><span>/</span><a href="#" class="active">Nosotros</a>
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                     <div class="col-lg-8 offset-lg-1 col-md-8">
                         <div class="text">
                             <p class="wow txt" data-splitting>
-                                {{$quienesSomos}}
+                                {!!$enterprise->who!!}
                             </p>
                         </div>
                     </div>
@@ -84,22 +84,22 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="img">
-                            <img class="thumparallax-down" src="/page/img/min-area.jpg" alt="">
+                            <img class="thumparallax-down" src="{{$enterprise->urlPath}}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 valign">
                         <div class="content">
                             <h4 class="wow custom-font" data-splitting>Sobre Nosotros</h4>
-                            <p class="wow txt" data-splitting>{{$nosotros}}
+                            <p class="wow txt" data-splitting>{!!$enterprise->about!!}
                             </p>
                             <ul class="feat">
                                 <li class="wow fadeInUp" data-wow-delay=".2s">
                                     <h6><span>1</span> Nuestra Misión</h6>
-                                    <p>{{$mision}}</p>
+                                    <p>{{$enterprise->mision}}</p>
                                 </li>
                                 <li class="wow fadeInUp" data-wow-delay=".4s">
                                     <h6><span>2</span> Nuestra Visión</h6>
-                                    <p>{{$vision}}</p>
+                                    <p>{{$enterprise->vision}}</p>
                                 </li>
                             </ul>
                         </div>

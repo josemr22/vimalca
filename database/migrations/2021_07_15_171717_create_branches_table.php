@@ -18,6 +18,8 @@ class CreateBranchesTable extends Migration
             $table->string('name');
             $table->text('introduction');
             $table->text('description');
+            $table->text('resume');
+            $table->string('image');
             $table->string('video');
             $table->timestamps();
         });

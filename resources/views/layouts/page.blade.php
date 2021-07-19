@@ -90,7 +90,7 @@
         <div class="container">
     
             <!-- Logo -->
-            <a class="logo" href="#">
+            <a class="logo" href="{{route('index')}}">
                 <img src="/page/img/logo-blanco.png" alt="logo">
             </a>
     

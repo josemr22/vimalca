@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             GallerySeeder::class,
             EnterpriseSeeder::class,
             MessageSeeder::class,
+            ClientSeeder::class,
         ]);
     }
 }

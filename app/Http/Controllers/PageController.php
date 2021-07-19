@@ -16,16 +16,14 @@ class PageController extends Controller
         $gallery = Gallery::where('category','!=','client')->get();
         $reviews = Review::get();
         $clients = Gallery::where('category','client')->get();
-        return view('page.index',compact('clients','reviews','gallery'));
+        $slides = Branch::get();
+        return view('page.index',compact('clients','reviews','gallery','slides'));
     }
 
     public function about(){
         $reviews = Review::get();
-        $quienesSomos=Enterprise::where('code','quienes_somos')->first()->one;
-        $nosotros=Enterprise::where('code','sobre_nosotros')->first()->one;
-        $mision=Enterprise::where('code','mision')->first()->one;
-        $vision=Enterprise::where('code','vision')->first()->one;
-        return view('page.about',compact('mision','vision','quienesSomos','nosotros','reviews'));
+        $enterprise=Enterprise::first();
+        return view('page.about',compact('enterprise','reviews'));
     }
 
     public function branch(String $branch){

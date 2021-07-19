@@ -1,17 +1,17 @@
 <x-page>
+    @if (count($slides) > 0)
     <header class="slider slider-prlx fixed-slider text-center">
         <div class="swiper-container parallax-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="/page/img/slider/1.jpg" data-overlay-dark="6">
+                    <div class="bg-img valign" data-background="{{$slides[0]->urlPath}}" data-overlay-dark="6">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
                                     <div class="caption center">
                                         <h1 data-splitting>Fábrica de <br> Hielo Vimalca</h1>
-                                        <p>If you need to redesign your new project, new visual strategy, ux structure
-                                            or you do have some cool ideas for collaboration.</p>
-                                        <a href="#0" class="btn-curve btn-lit mt-30">
+                                        <p>{{$slides[0]->resume}}</p>
+                                        <a href="{{route('branch','fabrica-hielo')}}" class="btn-curve btn-lit mt-30">
                                             <span>Ver más</span>
                                         </a>
                                     </div>
@@ -21,15 +21,14 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="/page/img/slider/2.jpg" data-overlay-dark="6">
+                    <div class="bg-img valign" data-background="{{$slides[1]->urlPath}}" data-overlay-dark="6">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
                                     <div class="caption center">
                                         <h1 data-splitting>Grifo & Minimarket<br> Vimalca Repsol</h1>
-                                        <p>If you need to redesign your new project, new visual strategy, ux structure
-                                            or you do have some cool ideas for collaboration.</p>
-                                        <a href="#0" class="btn-curve btn-lit mt-30">
+                                        <p>{{$slides[1]->resume}}</p>
+                                        <a href="{{route('branch','grifo-market')}}" class="btn-curve btn-lit mt-30">
                                             <span>Ver más</span>
                                         </a>
                                     </div>
@@ -39,15 +38,14 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="/page/img/slider/3.jpg" data-overlay-dark="6">
+                    <div class="bg-img valign" data-background="{{$slides[2]->urlPath}}" data-overlay-dark="6">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
                                     <div class="caption center">
                                         <h1 data-splitting> Transporte & Pesca Vimalca</h1>
-                                        <p>If you need to redesign your new project, new visual strategy, ux structure
-                                            or you do have some cool ideas for collaboration.</p>
-                                        <a href="#0" class="btn-curve btn-lit mt-30">
+                                        <p>{{$slides[2]->resume}}</p>
+                                        <a href="{{route('branch','pesca-y-transporte')}}" class="btn-curve btn-lit mt-30">
                                             <span>Ver más</span>
                                         </a>
                                     </div>
@@ -57,15 +55,14 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="/page/img/slider/4.jpg" data-overlay-dark="6">
+                    <div class="bg-img valign" data-background="{{$slides[3]->urlPath}}" data-overlay-dark="6">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
                                     <div class="caption center">
                                         <h1 data-splitting> Agua de Mesa Vimalca</h1>
-                                        <p>If you need to redesign your new project, new visual strategy, ux structure
-                                            or you do have some cool ideas for collaboration.</p>
-                                        <a href="#0" class="btn-curve btn-lit mt-30">
+                                        <p>{{$slides[3]->resume}}</p>
+                                        <a href="{{route('branch','agua-de-mesa')}}" class="btn-curve btn-lit mt-30">
                                             <span>Ver más</span>
                                         </a>
                                     </div>
@@ -97,6 +94,7 @@
             </div>
         </div>
     </header>
+    @endif
     
     <!-- ==================== End Slider ==================== -->
     <div class="main-content">

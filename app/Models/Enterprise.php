@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Enterprise extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
+
+    function getUrlPathAttribute(){
+        return asset("/img/vimalca/$this->image");
+    }
 }

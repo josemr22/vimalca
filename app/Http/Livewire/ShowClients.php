@@ -2,41 +2,37 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Client;
 use Livewire\Component;
-use App\Models\Gallery;
 use Livewire\WithFileUploads;
 use Intervention\Image\Facades\Image;
 
-class ShowGallery extends Component
+class ShowClients extends Component
 {
     use WithFileUploads;
 
-    public $galleries;
-    public $type;
+    public $clients;
+    public $type='hielo';
     public $name;
     public $file;
     public $action="store";
     public $idToUpdate;
 
     protected $rules = [
-        'name' => 'nullable',
+        'name' => 'required',
         'file'=>'nullable',
     ];
 
-    public function mount($type){
-        $this->type = $type;
-    }
-
     public function render()
     {
-        $this->galleries = Gallery::where('category',$this->type)->orderByDesc('created_at')->get();
-        return view('livewire.show-gallery');
+        $this->clients = Client::where('branch',$this->type)->orderByDesc('created_at')->get();
+        return view('livewire.show-clients');
     }
 
-    public function edit(Gallery $gallery){
-        $this->name = $gallery->one;
+    public function edit(Client $client){
+        $this->name = $client->name;
         $this->action = 'edit';
-        $this->idToUpdate = $gallery->id;
+        $this->idToUpdate = $client->id;
     }
 
     public function save(){
@@ -46,26 +42,26 @@ class ShowGallery extends Component
                 $this->addError('file', 'Cargue una imagen');
                 return redirect()->back()->withErrors(new \Illuminate\Support\MessageBag(['catch_exception'=>$this->getErrorBag()]));
             }
-            $gallery=new Gallery();
-            $gallery->one=$this->name;
-            $gallery->category=$this->type;
+            $client=new Client();
+            $client->name=$this->name;
+            $client->branch=$this->type;
             $fileName = time().$this->file->getClientOriginalName();
-            Image::make($this->file)->save(public_path().'/img/gallery/'.$fileName);
-            $gallery->image=$fileName;
-            $gallery->save();
+            Image::make($this->file)->resize(100, 100)->save(public_path().'/img/clients/'.$fileName);
+            $client->image=$fileName;
+            $client->save();
         }else{
-            $gallery=Gallery::findOrFail($this->idToUpdate);
-            $gallery->one=$this->name;
+            $client=Client::findOrFail($this->idToUpdate);
+            $client->name=$this->name;
             if($this->file!=null){
                 $fileName = time().$this->file->getClientOriginalName();
-                Image::make($this->file)->save(public_path().'/img/gallery/'.$fileName);
+                Image::make($this->file)->resize(100, 100)->save(public_path().'/img/clients/'.$fileName);
                 try {
-                    unlink(public_path().'/img/gallery/'.$gallery->image);
+                    unlink(public_path().'/img/client/'.$client->image);
                 }catch (\Exception $e){
                 }
-                $gallery->image=$fileName;
+                $client->image=$fileName;
             }
-            $gallery->save();
+            $client->save();
         }
         $this->default();
     }
@@ -76,7 +72,7 @@ class ShowGallery extends Component
         $this->action='store';
     }
 
-    public function remove(Gallery $gallery){
-        $gallery->delete();
+    public function remove(Client $client){
+        $client->delete();
     }
 }

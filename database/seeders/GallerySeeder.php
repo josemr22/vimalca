@@ -47,13 +47,5 @@ class GallerySeeder extends Seeder
                 'category' => 'agua',
             ]);
         }
-        for ($i=0; $i < 10; $i++) {
-            Gallery::create([ 
-                'image' => 'default.png',
-                'one' => 'tatojet.com',
-                // 'two' => 'default.png',
-                'category' => 'client',
-            ]);
-        }
     }
 }

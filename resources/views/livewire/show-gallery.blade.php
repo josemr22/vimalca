@@ -10,6 +10,9 @@
     <x-card>
         <!-- component -->
         <div class="table w-full p-2">
+            @if (session()->has('message'))
+                <x-alert message="{{ session('message') }}"></x-alert>
+            @endif
             <table class="w-full border">
                 <thead>
                     <tr class="bg-gray-50 border-b">

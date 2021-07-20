@@ -12,20 +12,18 @@ class ShowGallery extends Component
     use WithFileUploads;
 
     public $galleries;
-    public $type;
+    public $type='hielo';
     public $name;
     public $file;
     public $action="store";
     public $idToUpdate;
 
+    protected $queryString = ['type'];
+
     protected $rules = [
         'name' => 'nullable',
         'file'=>'nullable',
     ];
-
-    public function mount($type){
-        $this->type = $type;
-    }
 
     public function render()
     {
@@ -67,7 +65,8 @@ class ShowGallery extends Component
             }
             $gallery->save();
         }
-        $this->default();
+        session()->flash('message', 'Datos Guardados Correctamente');
+        return redirect()->to("/galerias?type=$this->type");
     }
 
     public function default(){

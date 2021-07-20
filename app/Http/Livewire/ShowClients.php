@@ -23,6 +23,8 @@ class ShowClients extends Component
         'file'=>'nullable',
     ];
 
+    protected $queryString = ['type'];
+
     public function render()
     {
         $this->clients = Client::where('branch',$this->type)->orderByDesc('created_at')->get();
@@ -63,7 +65,8 @@ class ShowClients extends Component
             }
             $client->save();
         }
-        $this->default();
+        session()->flash('message', 'Datos Guardados Correctamente');
+        return redirect()->to("/clientes?type=$this->type");
     }
 
     public function default(){

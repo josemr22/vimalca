@@ -29,7 +29,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/negocios', function (){
         return view('branches',['branches' => Branch::get()]);
     })->name('branches');
-    Route::view('/galerias', 'galleries')->name('galleries');
+    Route::get('/galerias', ShowGallery::class)->name('galleries');
     Route::get('/clientes', ShowClients::class)->name('clients');
     Route::get('/vimalca', ShowEnterprise::class)->name('vimalca');
     Route::get('/mensajes', ShowMessages::class)->name('messages');

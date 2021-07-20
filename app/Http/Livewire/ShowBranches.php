@@ -52,6 +52,7 @@ class ShowBranches extends Component
             $this->branch->image=$fileName;
             $this->branch->save();
         }
+        session()->flash('message', 'Datos Guardados Correctamente');
         return redirect()->route('branches.edit',$this->type);
     }
 }

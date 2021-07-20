@@ -7,6 +7,11 @@
 
     <form wire:submit.prevent="save">
         <x-card>
+            <div class="sm:px-4">
+                @if (session()->has('message'))
+                    <x-alert message="{{ session('message') }}"></x-alert>
+                @endif
+            </div>
             <div class="w-full sm:px-4 mt-3" wire:ignore>
                 <x-label>Introducción:</x-label>
                 <textarea id="introduction" wire:model="branch.introduction">{!! $branch->introduction !!}</textarea>

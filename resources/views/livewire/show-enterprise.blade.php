@@ -1,6 +1,11 @@
 <div>
     <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
     <x-card>
+    <div class="sm:px-4">
+        @if (session()->has('message'))
+            <x-alert message="{{ session('message') }}"></x-alert>
+        @endif
+    </div>
     <form wire:submit.prevent="save">
         <div class="w-full sm:px-4 mt-3" wire:ignore>
             <x-label>Quiénes Somos:</x-label>

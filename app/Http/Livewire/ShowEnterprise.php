@@ -48,6 +48,7 @@ class ShowEnterprise extends Component
             $this->enterprise->image=$fileName;
             $this->enterprise->save();
         }
+        session()->flash('message', 'Datos Guardados Correctamente');
         return redirect()->route('vimalca');
     }
 }

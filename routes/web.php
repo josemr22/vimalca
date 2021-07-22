@@ -23,7 +23,7 @@ use App\Models\Branch;
 |
 */
 
-Route::middleware(['auth'])->group(function(){
+Route::middleware(['auth'])->prefix('admin')->group(function(){
     Route::get('/reviews', ShowReviews::class)->name('reviews');
     Route::get('/negocios/{type}', ShowBranches::class)->name('branches.edit');
     Route::get('/negocios', function (){
@@ -33,10 +33,10 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/clientes', ShowClients::class)->name('clients');
     Route::get('/vimalca', ShowEnterprise::class)->name('vimalca');
     Route::get('/mensajes', ShowMessages::class)->name('messages');
-    Route::get('dashboard',function(){
-        return redirect()->route('reviews');
-    });
 });
+Route::get('dashboard',function(){
+    return redirect()->route('reviews');
+})->middleware('auth');
 
 Route::get('/', [App\Http\Controllers\PageController::class, 'index'])->name('index');
 Route::get('/nosotros', [App\Http\Controllers\PageController::class, 'about'])->name('about');

@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         User::factory()->create([
             'name' => 'Administrador',
-            'email' => 'admin@tatojet.com',
-            // 'password' => bcrypt('pass2021'),
+            'email' => 'admin@consorciovimalca.com',
+            'password' => bcrypt('qwerty1234.'),
         ]);
         $this->call([
             ReviewSeeder::class,

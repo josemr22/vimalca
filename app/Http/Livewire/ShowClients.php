@@ -66,7 +66,7 @@ class ShowClients extends Component
             $client->save();
         }
         session()->flash('message', 'Datos Guardados Correctamente');
-        return redirect()->to("/clientes?type=$this->type");
+        return redirect()->to("/admin/clientes?type=$this->type");
     }
 
     public function default(){

@@ -66,7 +66,7 @@ class ShowGallery extends Component
             $gallery->save();
         }
         session()->flash('message', 'Datos Guardados Correctamente');
-        return redirect()->to("/galerias?type=$this->type");
+        return redirect()->to("/admin/galerias?type=$this->type");
     }
 
     public function default(){

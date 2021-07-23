@@ -191,12 +191,6 @@
                                 <a href="#0" class="icon">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
-                                <a href="#0" class="icon">
-                                    <i class="fab fa-pinterest"></i>
-                                </a>
-                                <a href="#0" class="icon">
-                                    <i class="fab fa-behance"></i>
-                                </a>
                             </div>
                         </div>
                     </div>

@@ -70,6 +70,31 @@
         font-size: 13px;
         width: 20px;
     }
+
+    .floatwspp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 0px;
+        right: 0px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .floatwspp:hover {
+        text-decoration: none;
+        color: #25d366;
+        background-color: #fff;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
 </style>
 
 <body>
@@ -88,16 +113,17 @@
 
     <nav class="navbar change navbar-expand-lg">
         <div class="container">
-    
+
             <!-- Logo -->
             <a class="logo" href="{{route('index')}}">
                 <img src="/page/img/logo-blanco.png" alt="logo">
             </a>
-    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon-bar"><i class="fas fa-bars"></i></span>
             </button>
-    
+
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -114,7 +140,8 @@
                         <a class="nav-link" href="nosotros.php#misvis">Vision</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nuestras Empresas</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Nuestras Empresas</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="fabrica-hielo.php">Fábrica de Hielo Vimalca</a>
                             <a class="dropdown-item" href="grifo-market.php">Grifo & Minimarket Vimalca Repsol</a>
@@ -126,12 +153,16 @@
                         <a class="nav-link" href="contactanos.php">Contáctanos</a>
                     </li>
                 </ul>
-    
+
             </div>
         </div>
     </nav>
 
     {{$slot}}
+
+    <a href="https://api.whatsapp.com/send?phone=51955991195&text=Hola!%20Vengo%20desde%20la%20Web%20de%20GoodVibes%20Store." class="floatwspp" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
     <footer class="footer-half sub-bg section-padding pb-0">
         <div class="container">

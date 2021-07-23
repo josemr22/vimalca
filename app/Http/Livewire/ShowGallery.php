@@ -13,7 +13,6 @@ class ShowGallery extends Component
 
     public $galleries;
     public $type='hielo';
-    public $name;
     public $file;
     public $action="store";
     public $idToUpdate;
@@ -21,7 +20,6 @@ class ShowGallery extends Component
     protected $queryString = ['type'];
 
     protected $rules = [
-        'name' => 'nullable',
         'file'=>'nullable',
     ];
 
@@ -32,7 +30,6 @@ class ShowGallery extends Component
     }
 
     public function edit(Gallery $gallery){
-        $this->name = $gallery->one;
         $this->action = 'edit';
         $this->idToUpdate = $gallery->id;
     }
@@ -45,7 +42,6 @@ class ShowGallery extends Component
                 return redirect()->back()->withErrors(new \Illuminate\Support\MessageBag(['catch_exception'=>$this->getErrorBag()]));
             }
             $gallery=new Gallery();
-            $gallery->one=$this->name;
             $gallery->category=$this->type;
             $fileName = time().$this->file->getClientOriginalName();
             Image::make($this->file)->save(public_path().'/img/gallery/'.$fileName);
@@ -53,7 +49,6 @@ class ShowGallery extends Component
             $gallery->save();
         }else{
             $gallery=Gallery::findOrFail($this->idToUpdate);
-            $gallery->one=$this->name;
             if($this->file!=null){
                 $fileName = time().$this->file->getClientOriginalName();
                 Image::make($this->file)->save(public_path().'/img/gallery/'.$fileName);
@@ -70,12 +65,12 @@ class ShowGallery extends Component
     }
 
     public function default(){
-        $this->name=null;
         $this->file=null;
         $this->action='store';
     }
 
     public function remove(Gallery $gallery){
         $gallery->delete();
+        $this->emit('showToast', ['type' => 'success', 'message' => 'Registro Eliminado']);
     }
 }

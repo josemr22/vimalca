@@ -72,6 +72,31 @@
         font-size: 13px;
         width: 20px;
     }
+
+    .floatwspp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 5px;
+        right: 5px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .floatwspp:hover {
+        text-decoration: none;
+        color: #25d366;
+        background-color: #fff;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
 </style>
 
 <body>
@@ -135,6 +160,10 @@
 
     {{$slot}}
 
+    <a href="https://api.whatsapp.com/send?phone=51955991195&text=Hola!%20Vengo%20desde%20la%20Web%20de%20GoodVibes%20Store." class="floatwspp" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
     <footer class="footer-half sub-bg section-padding pb-0">
         <div class="container">
             <div class="row">
@@ -157,10 +186,10 @@
                             <h6 class="custom-font stit simple-btn">Síguenos</h6>
                             <div class="social">
                                 <a href="#0" class="icon">
-                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                                 <a href="#0" class="icon">
-                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-whatsapp"></i>
                                 </a>
                                 <a href="#0" class="icon">
                                     <i class="fab fa-pinterest"></i>
@@ -211,6 +240,7 @@
 
     <!-- custom scripts -->
     <script src="/page/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/88cd56de91.js" crossorigin="anonymous"></script>
     @stack('scripts')
 </body>
 

@@ -12,13 +12,19 @@
                     <x-alert message="{{ session('message') }}"></x-alert>
                 @endif
             </div>
+            <div class="w-full sm:px-4 mt-3">
+                <x-input wire:model.defer="branch.label_introduction"></x-input>
+                <x-input-error for="branch.label_introduction" class="mt-2" />
+            </div>
             <div class="w-full sm:px-4 mt-3" wire:ignore>
-                <x-label>Introducción:</x-label>
                 <textarea id="introduction" wire:model="branch.introduction">{!! $branch->introduction !!}</textarea>
                 <x-input-error for="branch.introduction" class="mt-2" />
             </div>
+            <div class="w-full sm:px-4 mt-3">
+                <x-input wire:model.defer="branch.label_description"></x-input>
+                <x-input-error for="branch.label_description" class="mt-2" />
+            </div>
             <div class="w-full sm:px-4 mt-3" wire:ignore>
-                <x-label>Descripción:</x-label>
                 <textarea id="description" wire:model="branch.description">{!! $branch->description !!}</textarea>
                 <x-input-error for="branch.description" class="mt-2" />
             </div>

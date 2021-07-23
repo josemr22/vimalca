@@ -89,8 +89,8 @@
                 <a href="#0"><i class="fab fa-facebook-f"></i></a>
                 <a href="#0"><i class="fab fa-facebook-f"></i></a>
                 <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                <a href="#0"><i class="fab fa-whatsapp"></i></a>
                 <a href="#0"><i class="fab fa-instagram"></i></a>
+                <a href="#0"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </header>
@@ -114,28 +114,28 @@
                         <div class="step-item xtop">
                             <span class="icon pe-7s-anchor"></span>
                             <h6>Transporte & Pesca Vimalca </h6>
-                            <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
+                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
                         </div>
                     </div>
                     <div class="col-lg-3 wow fadeInUp" data-wow-delay=".6s">
                         <div class="step-item xcolor">
                             <span class="icon pe-7s-helm"></span>
                             <h6>Fábrica de Hielo Vimalca</h6>
-                            <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
+                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
                         </div>
                     </div>
                     <div class="col-lg-3 wow fadeInUp" data-wow-delay=".9s">
                         <div class="step-item xtop">
                             <span class="icon pe-7s-map-marker"></span>
                             <h6>Grifo & Minimarket Vimalca Repsol</h6>
-                            <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
+                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
                         </div>
                     </div>
                     <div class="col-lg-3 wow fadeInUp" data-wow-delay=".12s">
                         <div class="step-item xcolor">
                             <span class="icon pe-7s-drop"></span>
                             <h6>Agua de Mesa Vimalca</h6>
-                            <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
+                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
                         </div>
                     </div>
                 </div>
@@ -252,7 +252,7 @@
                                             <div class="item-img bg-img wow imago" data-background="{{$item->urlPath}}">
                                             </div>
                                             <div class="cont">
-                                                <h6><a href="#0">{{$item->one}}</a></h6>
+                                                {{-- <h6><a href="#0">{{$item->one}}</a></h6> --}}
                                                 <h4><a href="servicios.php">{{$item->category}}</a></h4>
                                             </div>
                                         </div>

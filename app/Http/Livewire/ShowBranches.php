@@ -18,6 +18,8 @@ class ShowBranches extends Component
     protected $rules = [
         'branch.introduction' => 'required|string',
         'branch.description' => 'required|string',
+        'branch.label_introduction' => 'required|string',
+        'branch.label_description' => 'required|string',
         'branch.resume' => 'required|string',
         'branch.video' => 'required|string',
     ];
@@ -25,6 +27,8 @@ class ShowBranches extends Component
     protected $messages = [
         'branch.introduction.required' => 'Complete el campo',
         'branch.description.required' => 'Complete el campo',
+        'branch.label_introduction.required' => 'Complete el campo',
+        'branch.label_description.required' => 'Complete el campo',
         'branch.resume.required' => 'Complete el campo',
         'branch.video.required' => 'Complete el campo',
     ];

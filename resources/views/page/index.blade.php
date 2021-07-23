@@ -4,7 +4,7 @@
         <div class="swiper-container parallax-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="{{$slides[0]->urlPath}}" data-overlay-dark="6">
+                    <div class="bg-img valign" style="background-image: url('{{$slides[0]->urlPath}}')" data-overlay-dark="6">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="{{$slides[1]->urlPath}}" data-overlay-dark="6">
+                    <div class="bg-img valign" style="background-image: url('{{$slides[1]->urlPath}}')" data-overlay-dark="6">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="{{$slides[2]->urlPath}}" data-overlay-dark="6">
+                    <div class="bg-img valign" style="background-image: url('{{$slides[2]->urlPath}}')" data-overlay-dark="6">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="{{$slides[3]->urlPath}}" data-overlay-dark="6">
+                    <div class="bg-img valign" style="background-image: url('{{$slides[3]->urlPath}}')" data-overlay-dark="6">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
@@ -253,7 +253,7 @@
                                             </div>
                                             <div class="cont">
                                                 {{-- <h6><a href="#0">{{$item->one}}</a></h6> --}}
-                                                <h4><a href="servicios.php">{{$item->category}}</a></h4>
+                                                <h4><a href="servicios.php">{{$types[$item->category]['label']}}</a></h4>
                                             </div>
                                         </div>
                                     </div>

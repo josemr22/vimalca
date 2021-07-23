@@ -1,6 +1,6 @@
 <x-page>
     <div class="main-content">
-        <section class="page-header proj-det bg-img parallaxie valign" data-background="{{$branch->urlPath}}" data-overlay-dark="4">
+        <section class="page-header proj-det bg-img parallaxie valign" style="background-image: url('{{$branch->urlPath}}')" data-overlay-dark="4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-9">
@@ -42,7 +42,7 @@
 
         <section>
             <div class="container-fluid">
-                <div class="video-wrapper section-padding bg-img parallaxie valign" data-background="{{$branch->urlPath}}" data-overlay-dark="4">
+                <div class="video-wrapper section-padding bg-img parallaxie valign" style="background-image: url('{{$branch->urlPath}}')" data-overlay-dark="4">
                     <div class="full-width text-center">
                         <a class="vid" href="{{$branch->video}}">
                             <div class="vid-butn">

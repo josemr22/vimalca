@@ -18,7 +18,8 @@ class PageController extends Controller
         $reviews = Review::get();
         $clients = Client::where('branch','hielo')->get();
         $slides = Branch::get();
-        return view('page.index',compact('clients','reviews','gallery','slides'));
+        $types = BranchType::getList();
+        return view('page.index',compact('clients','reviews','gallery','slides','types'));
     }
 
     public function about(){

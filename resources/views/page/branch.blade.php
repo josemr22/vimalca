@@ -24,7 +24,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>01 </span> Introducción</h4>
+                            <h4><span>01 </span> {{$branch->label_introduction}}</h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8">
@@ -65,7 +65,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="htit">
-                            <h4><span>02 </span> Descripción</h4>
+                            <h4><span>02 </span> {{$branch->label_description}}</h4>
                         </div>
                     </div>
                     <div class="col-lg-12 offset-lg-1 col-md-8 mb-30">

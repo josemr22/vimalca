@@ -41,25 +41,22 @@
                             <h3 class="custom-font wow" data-splitting>Hablemos.
                             </h3>
                             <div class="item mb-40">
-                                <h5><a href="#0"> vimalca@website.com</a></h5>
-                                <h5> (+51) 933 292 586</h5>
+                                <h5><a href="#0"> contabilidad.grupovimalca@hotmail.com</a></h5>
+                                <h5> (+51) 959 942 026</h5>
                             </div>
                             <h3 class="custom-font wow" data-splitting>Visítanos.
                             </h3>
                             <div class="item">
-                                <h6> 123, Nombre de avenida,
+                                <h6> KM 0.8 Carretera Santa Rosa 
 
-                                    <br>Lima, Perú.
+                                    <br>Pimentel, Santa Rosa
                                 </h6>
                             </div>
-                            <div class="social mt-50">
-                                <a href="#0" class="icon">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#0" class="icon">
+                            <div class="social mt-50">                                
+                                <a href="https://api.whatsapp.com/send?phone=51959942026&text=Hola%2C%20gracias%20por%20comunicarte%20con%20Consorcio%20Vimalca%2C%20d%C3%A9janos%20tu%20consulta%20y%20pronto%20te%20atenderemos." class="icon">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
-                                <a href="#0" class="icon">
+                                <a href="https://www.instagram.com/consorcio.vimalca/" class="icon">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
@@ -74,8 +71,8 @@
 
         <!-- ==================== Start Map ==================== -->
 
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31695.21331265009!2d-79.8665500979129!3d-6.78182102086502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef232963dfff%3A0xa703e3454a7814bb!2sChiclayo!5e0!3m2!1ses!2spe!4v1626282519531!5m2!1ses!2spe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="map">            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.200542925645!2d-79.92969508469969!3d-6.866555769092051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cfb09da4a52b3%3A0xf99a604b94cbf801!2sFabrica%20de%20Hielo%20Vimalca!5e0!3m2!1ses-419!2spe!4v1627019363936!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         @push('scripts')
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

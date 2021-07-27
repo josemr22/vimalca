@@ -23,12 +23,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
-                        <div class="htit">
+                        <div class="htit" style="text-align: justify;">
                             <h4><span>01 </span> {{$branch->label_introduction}}</h4>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8">
-                        <div class="text js-scroll__content">
+                        <div class="text js-scroll__content" style="text-align: justify;">
                             <p class="extra-text">{!!$branch->introduction!!}</p>
                         </div>
                     </div>
@@ -64,12 +64,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
-                        <div class="htit">
+                        <div class="htit" style="text-align: justify;">
                             <h4><span>02 </span> {{$branch->label_description}}</h4>
                         </div>
                     </div>
                     <div class="col-lg-12 offset-lg-1 col-md-8 mb-30">
-                        <div class="text js-scroll__content">
+                        <div class="text js-scroll__content" style="text-align: justify;">
                             <p class="extra-text">
                                 {!!$branch->description!!}
                             </p>

@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-1 col-md-8">
-                        <div class="text">
+                        <div class="text" style="text-align: justify;">
                             <p class="wow txt" data-splitting>
                                 {!!$enterprise->who!!}
                             </p>
@@ -47,28 +47,28 @@
                         <div class="item md-mb50 wow fadeInUp" data-wow-delay=".3s">
                             <span class="icon pe-7s-anchor"></span>
                             <h6>Transporte <br> & Pesca <br> Vimalca </h6>
-                            <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
+                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item md-mb50 wow fadeInUp" data-wow-delay=".5s">
                             <span class="icon pe-7s-helm"></span>
                             <h6>Fábrica <br> de Hielo <br> Vimalca</h6>
-                            <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
+                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item wow fadeInUp" data-wow-delay=".7s">
                             <span class="icon pe-7s-map-marker"></span>
                             <h6>Grifo & Minimarket Vimalca Repsol</h6>
-                            <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
+                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="item wow fadeInUp" data-wow-delay=".7s">
                             <span class="icon pe-7s-drop"></span>
                             <h6>Agua <br> de Mesa <br> Vimalca</h6>
-                            <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
+                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
                         </div>
                     </div>
                 </div>
@@ -88,18 +88,19 @@
                         </div>
                     </div>
                     <div class="col-lg-6 valign">
-                        <div class="content">
+                        <div class="content" style="text-align: justify;">
                             <h4 class="wow custom-font" data-splitting>Sobre Nosotros</h4>
-                            <p class="wow txt" data-splitting>{!!$enterprise->about!!}
+                            <p style="text-align: justify !important;">
+                                {!!$enterprise->about!!}
                             </p>
                             <ul class="feat">
                                 <li class="wow fadeInUp" data-wow-delay=".2s">
                                     <h6><span>1</span> Nuestra Misión</h6>
-                                    <p>{{$enterprise->mision}}</p>
+                                    <p style="text-align: justify !important;">{{$enterprise->mision}}</p>
                                 </li>
                                 <li class="wow fadeInUp" data-wow-delay=".4s">
                                     <h6><span>2</span> Nuestra Visión</h6>
-                                    <p>{{$enterprise->vision}}</p>
+                                    <p style="text-align: justify !important;">{{$enterprise->vision}}</p>
                                 </li>
                             </ul>
                         </div>

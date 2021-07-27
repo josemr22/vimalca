@@ -160,7 +160,7 @@
 
     {{$slot}}
 
-    <a href="https://api.whatsapp.com/send?phone=51955991195&text=Hola!%20Vengo%20desde%20la%20Web%20de%20GoodVibes%20Store." class="floatwspp" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=51955991195&text=Hola!%20Vengo%20desde%20la%20Web%20de%20Vimalca" class="floatwspp" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
 
@@ -176,26 +176,20 @@
                         </div>
                         <div class="con-info custom-font">
                             <ul>
-                                <li><span>Email : </span> vimalca@website.com</li>
-                                <li><span>Dirección : </span> 123, Nombre de avenida, Lima, Perú.
+                                <li><span>Email : </span> contabilidad.grupovimalca@hotmail.com</li>
+                                <li><span>Dirección : </span> KM 0.8 Carretera Santa Rosa - Pimentel, Santa Rosa
                                 </li>
-                                <li><span>Teléfono : </span> (+51) 933 292 586</li>
+                                <li><span>Teléfono : </span> (+51) 955 991 195</li>
                             </ul>
                         </div>
                         <div class="social-icon">
                             <h6 class="custom-font stit simple-btn">Síguenos</h6>
                             <div class="social">
-                                <a href="#0" class="icon">
-                                    <i class="fab fa-facebook-f"></i>
+                                <a href="https://www.instagram.com/consorcio.vimalca/" class="icon">
+                                    <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="#0" class="icon">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#0" class="icon">
-                                    <i class="fab fa-pinterest"></i>
-                                </a>
-                                <a href="#0" class="icon">
-                                    <i class="fab fa-behance"></i>
+                                <a href="https://api.whatsapp.com/send?phone=51955991195&text=Hola!%20Vengo%20desde%20la%20Web%20de%20Vimalca" class="icon">
+                                    <i class="fab fa-whatsapp"></i>
                                 </a>
                             </div>
                         </div>
@@ -204,11 +198,7 @@
                 <div class="col-lg-5 offset-lg-2">
                     <div class="subscribe mb-50">
                         <h6 class="custom-font stit simple-btn">Información:</h6>
-                        <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially unchanged.</p>
+                        <p class="">LConsorcio Vimalca tiene 10 años de experiencia iniciando propiamente con la pesca su presencia en el mercado inicio en el año 2011.</p>
                     </div>
                     <div class="insta">
                         <h6 class="custom-font stit simple-btn">Instagram Post</h6>

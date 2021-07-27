@@ -85,12 +85,12 @@
             <div class="swiper-pagination top botm custom-font"></div>
     
             <div class="social-icon">
-                <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                <a href="#0"><i class="fab fa-instagram"></i></a>
-                <a href="#0"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/fabricadehielo.vimalca"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/pescaytransportevimalca/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/GrifoMinimarketVimalcaRepsol/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/aguademesavimalca/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/consorcio.vimalca/"><i class="fab fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=51959942026&text=Hola%2C%20gracias%20por%20comunicarte%20con%20Consorcio%20Vimalca%2C%20d%C3%A9janos%20tu%20consulta%20y%20pronto%20te%20atenderemos."><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </header>

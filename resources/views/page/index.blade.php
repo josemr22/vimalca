@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- slider setting -->
             <div class="setone setwo">
                 <div class="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer">
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="swiper-pagination top botm custom-font"></div>
-    
+
             <div class="social-icon">
                 <a href="#0"><i class="fab fa-facebook-f"></i></a>
                 <a href="#0"><i class="fab fa-facebook-f"></i></a>
@@ -95,13 +95,13 @@
         </div>
     </header>
     @endif
-    
+
     <!-- ==================== End Slider ==================== -->
     <div class="main-content">
-    
-    
+
+
         <!-- ==================== Start Servicios ==================== -->
-    
+
         <section class="services section-padding sub-bg">
             <div class="container">
                 <div class="sec-head custom-font tr-head">
@@ -110,34 +110,50 @@
                     <span class="tbg">Nuestras Empresas</span>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="step-item xtop">
-                            <span class="icon pe-7s-anchor"></span>
-                            <h6>Transporte & Pesca Vimalca </h6>
-                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+
+                        <div class="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
+                            <a href="{{route('branch','pesca-y-transporte')}}">
+                            <div class="step-item xtop">
+                                <span class="icon pe-7s-anchor"></span>
+                                <h6>Transporte & Pesca Vimalca </h6>
+                                {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+                            </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="step-item xcolor">
-                            <span class="icon pe-7s-helm"></span>
-                            <h6>Fábrica de Hielo Vimalca</h6>
-                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+
+
+                        <div class="col-lg-3 wow fadeInUp" data-wow-delay=".6s">
+                            <a href="{{route('branch','fabrica-hielo')}}">
+                            <div class="step-item xcolor">
+                                <span class="icon pe-7s-helm"></span>
+                                <h6>Fábrica de Hielo Vimalca</h6>
+                                {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+                            </div>
+                             </a>
                         </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay=".9s">
-                        <div class="step-item xtop">
-                            <span class="icon pe-7s-map-marker"></span>
-                            <h6>Grifo & Minimarket Vimalca Repsol</h6>
-                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+
+
+                        <div class="col-lg-3 wow fadeInUp" data-wow-delay=".9s">
+                            <a href="{{route('branch','grifo-market')}}">
+                            <div class="step-item xtop">
+                                <span class="icon pe-7s-map-marker"></span>
+                                <h6>Grifo & Minimarket Vimalca Repsol</h6>
+                                {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+                            </div>
+                             </a>
                         </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay=".12s">
-                        <div class="step-item xcolor">
-                            <span class="icon pe-7s-drop"></span>
-                            <h6>Agua de Mesa Vimalca</h6>
-                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+
+
+                        <div class="col-lg-3 wow fadeInUp" data-wow-delay=".12s">
+                            <a href="{{route('branch','agua-de-mesa')}}">
+                            <div class="step-item xcolor">
+                                <span class="icon pe-7s-drop"></span>
+                                <h6>Agua de Mesa Vimalca</h6>
+                                {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+                            </div>
+                             </a>
                         </div>
-                    </div>
+
                 </div>
                 <div class="smore custom-font">
                     <a href="#0">Entérate más aquí</a>
@@ -145,12 +161,12 @@
                 </div>
             </div>
         </section>
-    
+
         <!-- ==================== End Servicios ==================== -->
-    
-    
+
+
         <!-- ==================== Start about ==================== -->
-    
+
         <div class="about section-padding">
             <div class="container">
                 <div class="row">
@@ -199,7 +215,7 @@
                                             <span></span>
                                         </div>
                                     </li>
-    
+
                                     <li class="space wow fadeIn" data-wow-delay=".5s">
                                         <span class="icon pe-7s-helm"></span>
                                         <h6 class="custom-font">Fábrica de Hielo </h6>
@@ -234,12 +250,12 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- ==================== End about ==================== -->
-    
-    
+
+
         <!-- ==================== Start Galería ==================== -->
-    
+
         <section class="work-carousel section-padding pt-0 metro position-re">
             <div class="container ontop">
                 <div class="row">
@@ -249,7 +265,8 @@
                                 @foreach ($gallery as $item)
                                     <div class="swiper-slide">
                                         <div class="content wow noraidus fadeInUp" data-wow-delay=".3s">
-                                            <div class="item-img bg-img wow imago" data-background="{{$item->urlPath}}">
+                                            <div class="item-img bg-img wow imago"
+                                            style="background-image: url('{{$item->urlPath}}')">
                                             </div>
                                             <div class="cont">
                                                 {{-- <h6><a href="#0">{{$item->one}}</a></h6> --}}
@@ -259,7 +276,7 @@
                                     </div>
                                 @endforeach
                             </div>
-    
+
                             <!-- slider setting -->
                             <div class="swiper-button-next swiper-nav-ctrl simp-next cursor-pointer">
                                 <span class="simple-btn right">prev</span>
@@ -273,19 +290,19 @@
             </div>
             <div class="half-bg top"></div>
         </section>
-    
+
         <!-- ==================== End Galería ==================== -->
-    
-    
-    
+
+
+
         <!-- ==================== Start block-sec ==================== -->
-    
+
         <x-reviews :reviews="$reviews" />
         <!-- ==================== End block-sec ==================== -->
-    
-    
+
+
         <!-- ==================== Start clients Brands ==================== -->
-    
+
         {{-- <x-clients :clients="$clients" :style="'padding-top:190px'"/> --}}
     </div>
 </x-page>

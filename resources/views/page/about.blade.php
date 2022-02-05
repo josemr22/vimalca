@@ -42,36 +42,64 @@
     
         <section class="services section-padding">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="item md-mb50 wow fadeInUp" data-wow-delay=".3s">
-                            <span class="icon pe-7s-anchor"></span>
-                            <h6>Transporte <br> & Pesca <br> Vimalca </h6>
-                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="item md-mb50 wow fadeInUp" data-wow-delay=".5s">
-                            <span class="icon pe-7s-helm"></span>
-                            <h6>Fábrica <br> de Hielo <br> Vimalca</h6>
-                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="item wow fadeInUp" data-wow-delay=".7s">
-                            <span class="icon pe-7s-map-marker"></span>
-                            <h6>Grifo & Minimarket Vimalca Repsol</h6>
-                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="item wow fadeInUp" data-wow-delay=".7s">
-                            <span class="icon pe-7s-drop"></span>
-                            <h6>Agua <br> de Mesa <br> Vimalca</h6>
-                            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
-                        </div>
-                    </div>
-                </div>
+            <div class="row">
+
+<div class="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
+    <a href="{{route('branch','pesca-y-transporte')}}">
+    
+        <div class="step-item xtop xcolor" data-tilt data-tilt-scale="1.1">
+        <span><img src="/page/img/logo_pesca.png" alt=""></span>
+            <h6>Transporte & Pesca Vimalca </h6>
+            {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+        </div>
+    
+    
+    </a>
+</div>
+
+
+<div class="col-lg-3 wow fadeInUp" data-wow-delay=".6s">
+    <a href="{{route('branch','fabrica-hielo')}}">
+    
+    <div class="step-item xtop xcolor" data-tilt data-tilt-scale="1.1"> 
+        <span><img src="/page/img/logo_fabrica.png" alt=""></span>
+        <h6>Fábrica de Hielo Vimalca</h6>
+        {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+    </div>
+    
+    
+     </a>
+</div>
+
+
+<div class="col-lg-3 wow fadeInUp" data-wow-delay=".9s">
+    <a href="{{route('branch','grifo-market')}}">
+    
+    <div class="step-item xtop xcolor" data-tilt data-tilt-scale="1.1">
+    <span><img src="/page/img/logo_market.png" alt=""></span>
+        <h6>Grifo & Minimarket Vimalca Repsol</h6>
+        {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+    </div>
+    
+    
+     </a>
+</div>
+
+
+<div class="col-lg-3 wow fadeInUp" data-wow-delay=".12s">
+    <a href="{{route('branch','agua-de-mesa')}}">
+    
+    <div class="step-item  xtop xcolor" data-tilt data-tilt-scale="1.1">
+    <span><img src="/page/img/logo_agua.png" alt=""></span>
+        <h6>Agua de Mesa Vimalca</h6>
+        {{-- <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p> --}}
+    </div>
+    
+    
+     </a>
+</div>
+
+</div>
             </div>
         </section>
     

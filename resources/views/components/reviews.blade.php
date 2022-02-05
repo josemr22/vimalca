@@ -1,11 +1,12 @@
 <section class="block-sec">
-    <div class="background bg-img section-padding pb-0" data-background="/page/img/slider/2.jpg" data-overlay-dark="8">
+    <div class="background bg-img section-padding pb-0"  data-overlay-dark="8" style="background-image: url(/page/img/slider/5.jpg);background-size: cover;
+    background-position: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="vid-area">
                         <div class="vid-icon">
-                            <a class="vid" href="https://vimeo.com/127203262">
+                            <a class="vid" href="https://youtube.com/channel/UCNgyj7IxMFHXpgK3_f_j4oQ" target="_blanck">
                                 <div class="vid-butn">
                                     <span class="icon">
                                         <i class="fas fa-play"></i>

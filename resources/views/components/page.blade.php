@@ -118,7 +118,7 @@
     
             <!-- Logo -->
             <a class="logo" href="#">
-                <img src="/page/img/logo-blanco.png" alt="logo">
+                <img src="/page/img/logo-azul.png" alt="logo">
             </a>
     
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,10 +135,10 @@
                         <a class="nav-link" href="{{route('about')}}">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/nosotros#misvis">Mision</a>
+                        <a class="nav-link" href="/nosotros#misvis">Misión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/nosotros#misvis">Vision</a>
+                        <a class="nav-link" href="/nosotros#misvis">Visión</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nuestras Empresas</a>
@@ -185,6 +185,10 @@
                         <div class="social-icon">
                             <h6 class="custom-font stit simple-btn">Síguenos</h6>
                             <div class="social">
+                            <a href="https://www.facebook.com/fabricadehielo.vimalca"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/pescaytransportevimalca/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/GrifoMinimarketVimalcaRepsol/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/aguademesavimalca/"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://www.instagram.com/consorcio.vimalca/" class="icon">
                                     <i class="fab fa-instagram"></i>
                                 </a>
@@ -196,24 +200,41 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2">
-                    <div class="subscribe mb-50">
+                    <!-- <div class="subscribe mb-50">
                         <h6 class="custom-font stit simple-btn">Información:</h6>
                         <p class="">Consorcio Vimalca tiene 10 años de experiencia iniciando propiamente con la pesca su presencia en el mercado inicio en el año 2011.</p>
-                    </div>
-                    <div class="insta">
-                        <h6 class="custom-font stit simple-btn">Instagram Post</h6>
-                        <div class="insta-gallary">
-                            <a href="#0">
-                                <img src="/page/img/insta/1.jpg" alt="">
-                            </a>
-                            <a href="#0">
-                                <img src="/page/img/insta/2.jpg" alt="">
-                            </a>
-                            <a href="#0">
-                                <img src="/page/img/insta/3.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+                    </div> -->
+                    <div class="cont-info">
+                            <h5 class="extra-title mb-10" style="color: white !important">Info de Contacto.</h5>
+                            <span class="custom-font wow" data-splitting>Contacto Fábrica de Hielo Vimalca
+                            </span>
+                            <div class="item">
+                                <p> ☎️074 521220</p>
+                                <p> 📲926 908 744</p>
+                            </div>
+                            <span class="custom-font wow" data-splitting>Contacto Grifo & Minimarket Vimalca Repsol
+
+                            </span>
+                            <div class="item">
+                                <p> 📲+51 981 384 220</p>
+                                <p> 📲+51 981 213 498</p>
+                            </div>
+                            <span class="custom-font wow" data-splitting>Contacto Pesca & Transporte Vimalca
+
+                            </span>
+                            <div class="item">
+                                <p> ☎️074 521220
+</p>
+                                <p> 📲 +51 936 121 283</p>
+                            </div>
+                            <span class="custom-font wow" data-splitting>Contacto Agua de Mesa Vimalca
+
+                            </span>
+                            <div class="item">
+                                <p> ☎️074 521220</p>
+                                
+                            </div> 
+                </div>
                 </div>
             </div>
             <div class="copyrights text-center">
@@ -227,6 +248,7 @@
 
     <!-- plugins -->
     <script src="/page/js/plugins.js"></script>
+    <script type="text/javascript" src="/page/js/vanilla.js"></script> 
 
     <!-- custom scripts -->
     <script src="/page/js/scripts.js"></script>

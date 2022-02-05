@@ -38,11 +38,33 @@
                     <div class="col-lg-5 offset-lg-1">
                         <div class="cont-info">
                             <h4 class="extra-title mb-50">Info de Contacto.</h4>
-                            <h3 class="custom-font wow" data-splitting>Hablemos.
+                            <h3 class="custom-font wow" data-splitting>Contacto Fábrica de Hielo Vimalca
                             </h3>
                             <div class="item mb-40">
-                                <h5><a href="#0"> contabilidad.grupovimalca@hotmail.com</a></h5>
-                                <h5> (+51) 959 942 026</h5>
+                                <h5> ☎️074 521220</h5>
+                                <h5> 📲926 908 744</h5>
+                            </div>
+                            <h3 class="custom-font wow" data-splitting>Contacto Grifo & Minimarket Vimalca Repsol
+
+                            </h3>
+                            <div class="item mb-40">
+                                <h5> 📲+51 981 384 220</h5>
+                                <h5> 📲+51 981 213 498</h5>
+                            </div>
+                            <h3 class="custom-font wow" data-splitting>Contacto Pesca & Transporte Vimalca
+
+                            </h3>
+                            <div class="item mb-40">
+                                <h5> ☎️074 521220
+</h5>
+                                <h5> 📲 +51 936 121 283</h5>
+                            </div>
+                            <h3 class="custom-font wow" data-splitting>Contacto Agua de Mesa Vimalca
+
+                            </h3>
+                            <div class="item mb-40">
+                                <h5> ☎️074 521220</h5>
+                                
                             </div>
                             <h3 class="custom-font wow" data-splitting>Visítanos.
                             </h3>
@@ -52,7 +74,11 @@
                                     <br>Pimentel, Santa Rosa
                                 </h6>
                             </div>
-                            <div class="social mt-50">                                
+                            <div class="social mt-50">    
+                            <a href="https://www.facebook.com/fabricadehielo.vimalca"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/pescaytransportevimalca/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/GrifoMinimarketVimalcaRepsol/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/aguademesavimalca/"><i class="fab fa-facebook-f"></i></a>                            
                                 <a href="https://api.whatsapp.com/send?phone=51959942026&text=Hola%2C%20gracias%20por%20comunicarte%20con%20Consorcio%20Vimalca%2C%20d%C3%A9janos%20tu%20consulta%20y%20pronto%20te%20atenderemos." class="icon">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>

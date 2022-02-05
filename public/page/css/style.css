@@ -32,7 +32,7 @@
     |--- BASE
 
         |- responsive
-	
+
 
 
 ---------------------------------------------------------------- */
@@ -85,7 +85,8 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   line-height: 1.4;
-  font-weight: 600; }
+  font-weight: 600;
+color: #0d223f; }
 
 p {
   color: #777;
@@ -1033,44 +1034,44 @@ body {
 
 [data-overlay-dark="1"]:before,
 [data-overlay-light="1"]:before {
-  opacity: .1; }
+  opacity: 0; }
 
 [data-overlay-dark="2"]:before,
 [data-overlay-light="2"]:before {
-  opacity: .2; }
+  opacity: 0; }
 
 [data-overlay-dark="3"]:before,
 [data-overlay-light="3"]:before {
-  opacity: .3; }
+  opacity: 0; }
 
 [data-overlay-dark="4"]:before,
 [data-overlay-light="4"]:before {
-  opacity: .4; }
+  opacity: 0; }
 
 [data-overlay-dark="5"]:before,
 [data-overlay-light="5"]:before {
-  opacity: .5; }
+  opacity: 0; }
 
 [data-overlay-dark="6"]:before,
 [data-overlay-light="6"]:before {
-  opacity: .6; }
+  opacity: 0; }
 
 [data-overlay-dark="7"]:before,
 [data-overlay-light="7"]:before {
-  opacity: .7; }
+  opacity: 0; }
 
 [data-overlay-dark="8"]:before,
 [data-overlay-light="8"]:before {
-  opacity: .8; }
+  opacity: 0; }
 
 [data-overlay-dark="9"]:before,
 [data-overlay-light="9"]:before,
 [data-overlay-color="9"]:before {
-  opacity: .9; }
+  opacity: 0; }
 
 [data-overlay-dark="10"]:before,
 [data-overlay-light="10"]:before {
-  opacity: 1; }
+  opacity: 0; }
 
 /* ====================== [ End Overlay ] ====================== */
 /* ====================== [ Start Heading ] ====================== */
@@ -1089,7 +1090,8 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
-    text-shadow: 0 8px rgba(0, 0, 0, 0.05); }
+    text-shadow: 0 8px rgba(0, 0, 0, 0.05); 
+  color: #0d223f;}
   .sec-head .tbg {
     position: absolute;
     bottom: 0;
@@ -1133,7 +1135,8 @@ body {
 .main-title {
   font-weight: 600;
   line-height: 1.5;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+color: #0d223f; }
 
 .extra-title {
   font-weight: 700; }
@@ -1276,7 +1279,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  background: transparent;
+  background: white;
   border-bottom: 2px solid transparent;
   z-index: 999;
   min-height: 80px; }
@@ -1285,7 +1288,7 @@ body {
   .navbar .navbar-nav .nav-link {
     font-size: 12px;
     font-weight: 500;
-    color: #fff;
+    color: #4d5a6b;
     padding: 15px 7px;
     margin: 10px 15px; }
   .navbar .navbar-nav .dropdown-menu {
@@ -1731,9 +1734,10 @@ body {
       .slider .parallax-slider .caption .thin span {
         color: #547ab0; }
     .slider .parallax-slider .caption h1 {
-      font-size: 65px;
+      font-size: 45px;
       font-weight: 700;
       letter-spacing: 4px;
+      text-shadow: 5px 3px 8px black;
       color: #fff;
       opacity: 0;
       visibility: hidden;
@@ -1746,6 +1750,8 @@ body {
     .slider .parallax-slider .caption p {
       color: #eee;
       margin-top: 15px;
+      text-shadow: 3px 2px 2px black;
+    font-size: 17px;
       opacity: 0;
       -webkit-transform: translateY(20px);
       -ms-transform: translateY(20px);
@@ -2272,12 +2278,16 @@ body {
   height: 75vh; }
   .pages-header .cont h1 {
     font-size: 75px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-shadow: 3px 4px 8px black; }
   .pages-header .cont .path {
     color: #fff;
-    font-size: 17px; }
+    font-size: 17px;
+    text-shadow: 3px 4px 8px black; }
     .pages-header .cont .path .active {
-      color: #547ab0; }
+      color: #fff;
+    font-size: 17px;
+    text-shadow: 3px 4px 8px black; }
     .pages-header .cont .path span {
       margin: 0 20px;
       font-size: 10px; }
@@ -2769,7 +2779,7 @@ body {
       margin-right: 0; }
 
 .extra-text {
-  font-size: 22px; }
+  font-size: 16px; }
 
 .video-wrapper {
   min-height: 500px; }
@@ -2927,7 +2937,7 @@ body {
       border: 2px solid rgba(0, 0, 0, 0.1); }
   .services .step-item {
     text-align: center;
-    padding: 60px;
+    padding: 39px;
     margin: 60px auto;
     background: #efefef;
     position: relative; }
@@ -2936,8 +2946,8 @@ body {
     .services .step-item.xtop {
       top: -60px; }
     .services .step-item.xcolor {
-      background: #547ab0;
-      color: #11141b; }
+      background: #0d223f;
+      color: #fefefe; }
       .services .step-item.xcolor .icon {
         color: #11141b !important; }
       .services .step-item.xcolor p {
@@ -2980,7 +2990,8 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 1.5;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+  color: #0d223f; }
   .min-area .content ul {
     margin: 0; }
     .min-area .content ul li {
@@ -4601,7 +4612,7 @@ body {
   color: #fff;
   background: #0c0f16 !important;
   position: relative;
-  z-index: -1; }
+  z-index: 0; }
   .footer-half:after {
     content: '';
     position: absolute;
